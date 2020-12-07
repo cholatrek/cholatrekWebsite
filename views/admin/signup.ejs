@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="/img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <!-- <link href="/css/style.css" rel="stylesheet"> -->
+
+    <!-- Responsive CSS -->
+    <link href="/css/responsive/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    <!-- ***** Header Area Start ***** -->
+  <div >
+       
+  </div>
+    <!-- ***** Header Area End ***** -->
+    
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                    <div class="limiter"><br>
+                            <div class="container-login100">
+                                <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50  p-5" style="border: 1px solid silver">
+                                    <form action="/auth/create-user" method="post" >
+                                        <h3 class="text-center">Sign Up </h3><br>
+                    
+                                        <% if (error.length > 0) { %>
+                    
+                                            <div class="alert alert-danger"><%= error %></div>
+                                            
+                                        <% } %>
+                    
+                                        <div class="form-group">
+                                                <label for="exampleInputEmail1">Full Name</label>
+                                                <input type="text" class="form-control" name="fullname"  placeholder="Enter your full name">
+                                        </div>
+                    
+                    
+                    
+                                        <div class="form-group">
+                    
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" name="email" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                    
+                                          
+                    
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1"  >Password</label>
+                                            <input type="password" name="password" class="form-control" placeholder="Password">
+                                        </div>
+                    
+                                          
+                                          <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form><br>
+                    
+                                    <div class="text-center">
+                                        <p>Already have an account? <a href="/auth/login" >Login Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

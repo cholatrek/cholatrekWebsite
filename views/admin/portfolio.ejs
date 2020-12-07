@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cholatrek Admin - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+  <link href="/css/style3.css" rel="stylesheet">
+  <link href="/css/style2.css" rel="stylesheet">
+
+
+  </head>
+  <body id="page-top">
+    <!-- Page Wrapper -->
+  <div id="wrapper" class="shadow"  style="background-color: #343A40">
+
+    <!-- Sidebar -->
+    <!-- <nav class="sidebar"> -->
+        <%- include('./partials/sidebar.ejs') %>
+  
+      
+    <!-- End of Sidebar -->
+
+     <!-- Topbar -->
+     
+     <%- include('./partials/topbar.ejs') %>
+      <!-- this is the end of the topbar -->
+
+
+  <!-- This is the main content -->
+    
+    
+      <div>
+        <h4 class=" text-gray-600" style="padding-top:100px;padding-left:13px;" >Portfolio </h4>
+      </div>
+
+     
+
+      <div class="row container py-3" >
+      
+       
+
+      </div>
+
+      <div class="container">
+         
+
+          <div class="row">
+
+            <% for(var i = 0; i < portfolio.length; i++){ %>
+
+
+              <div class="col-sm-3"  style="margin-bottom:20px;" >
+                  <div class="shadow">
+                          <div class="card " style="">
+                          <img class="card-img-top" src=" <%= portfolio[i].portfolioImage.slice(8) %>" alt="Card image cap">
+                          <div class="card-body">
+                            <p><%= portfolio[i].title %></p>
+                            <p class="card-text">
+                                <div class="">
+                                    <button  data-toggle="modal" data-target="#popup<%= i %>"  class="float-left btn btn-success" >Edit Post </button>
+                                    <button data-toggle="modal" data-target="#popup<%= i+ portfolio.length %>" class="float-right btn btn-danger" >Delete ! </button>
+                                </div>
+                            </p>
+                          </div>
+                  </div>
+                  </div>
+            </div>
+
+            <div class="modal fade" id="popup<%= i %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Blog Post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                     <form  action="/port/portfolioEdit/<%= portfolio[i]._id %>"  method="post">
+                       
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Title</label>
+                          <input type="name" class="form-control" id="exampleInputEmail1" value="<%= portfolio[i].title %>" name="title" aria-describedby="emailHelp" placeholder="Title of Job">
+                          
+                        </div>
+                     
+
+                         <div class="form-group">
+                            <label for="exampleInputEmail1">Category of Job</label>
+                            <select class="form-control form-control" name="category"  >
+                                <option value="<%= portfolio[i].category %>" ><%= portfolio[i].category %></option>
+                                <option value="app">App Development</option>
+                                <option value="web">Web Development</option>
+                                <option value="ui">UI/UX</option>
+                                <option value="branding">Branding</option>
+                                <option value="training">Staff Training </option>
+                                <option value="school">School Management System</option>
+                                
+                              </select>
+
+                         </div>
+                          <div class="form-group">
+                              <label for="exampleInputEmail1"> Date</label>
+                              <input type="date" class="form-control" id="exampleInputEmail1" name="date" value="<%= portfolio[i].date %>" aria-describedby="emailHelp" placeholder="Date Uploaded">
+                              
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Overview</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" name="overview" value="<%= portfolio[i].overview %>" aria-describedby="emailHelp" placeholder="Overview of Project">
+                                
+                              </div>
+
+                              <div class="form-group">
+                                  <label for="exampleInputEmail1">Author</label>
+                                  <input type="text" class="form-control" id="exampleInputEmail1" name="author" value="<%= portfolio[i].author %>" aria-describedby="emailHelp" placeholder="Author">
+                                  
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Position</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" name="position" value="<%= portfolio[i].position %>" aria-describedby="emailHelp" placeholder="Position at Cholatrek">
+                                    
+                                  </div>
+
+
+                                  <div class="form-group">
+                                      <label for="exampleInputEmail1">Analysis</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" name="analysis" value="<%= portfolio[i].analysis %>" aria-describedby="emailHelp" placeholder="Enter Analysis Phase">
+                                      
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Design</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="design" value="<%= portfolio[i].design %>" aria-describedby="emailHelp" placeholder="Enter Design Phase">
+                                        
+                                      </div>
+
+
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Implementation</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="implementation" value="<%= portfolio[i].implementation %>" aria-describedby="emailHelp" placeholder="implementation phase ">
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Testing</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="testing" value="<%= portfolio[i].testing %>" aria-describedby="emailHelp" placeholder="Testing">
+                                        
+                                    </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1"> Excerpt</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="excerpt" value="<%= portfolio[i].excerpt %>" rows="3"></textarea>
+                              </div>
+                          
+                             
+                     
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Publish</button>
+                                  </div>
+  
+                        
+                       </form>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+  
+              <div class="modal fade" id="popup<%= i+ portfolio.length %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content" style="padding:5%">
+                   <h4 style="font-weight:bold; text-align:center">Do you want to Delete this post ?</h4>
+                  <center> 
+                       <form action="/port/portfolioDelete/<%= portfolio[i].id %>" method="post">
+                             <input type="hidden"><br<br><br>
+                             <button class="btn btn-danger"  style="padding:10px 30px;" type="submit">Yes</button>  
+                       </form>
+                 </center> 
+                 </div>
+               </div>
+             </div>
+
+            <% } %>
+              
+               
+               
+
+                 
+
+              
+             
+              
+          </div>
+         
+
+
+      
+            
+      </div>
+     
+      
+  
+  <!-- this is the end of the main content -->
+      
+     
+
+      
+      
+
+
+
+   
+
+      
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="/js/admin.min.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V19</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="icon" href="/img/core-img/favicon.ico">
+
+<!-- Core Stylesheet -->
+<!-- <link href="/css/style.css" rel="stylesheet"> -->
+
+<!-- Responsive CSS -->
+<link href="/css/responsive/responsive.css" rel="stylesheet">
+<!--===============================================================================================-->
+</head>
+<body>
+       
+	<div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                    <div class="limiter shadow">
+                            <div class="container-login100">
+                                <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50 p-3" style="border: 1px solid silver" >
+                                        <form action="/admin/blogPost" method="post" enctype="multipart/form-data" >
+                                            <h3 class="text-center">Blog Post </h3><br>
+                        
+                                        
+                        
+                                            <div class="form-group">
+                                                    <label for="exampleInputEmail1">Title</label>
+                                                    <input type="text" class="form-control" name="title"  placeholder="Enter the title of product">
+                                            </div>
+                        
+                                          
+                        
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Date</label>
+                                                <input type="date" class="form-control" name="date"  placeholder="Enter the title of product">
+                                           </div>
+                                           <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Category of Blog</label>
+                                            <select class="form-control" name="category" id="exampleFormControlSelect1">
+                                              <option></option>
+                                              <option value="Training">Training</option>
+                                              <option value="Graphics">Graphics</option>
+                                              <option value="Branding">Branding</option>
+                                              <option value="Certification" >Certification</option>
+                                            </select>
+                                          </div>
+                        
+                                          <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Excerpt</label>
+                                            <textarea class="form-control" name="excerpt" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                          </div>
+                        
+                                          <div class="form-group">
+                                            <label for="exampleFormControlFile1">Upload the product Image</label>
+                                            <input type="file" name="imgUrl" class="form-control-file" id="exampleFormControlFile1">
+                                          </div>
+                        
+                        
+                                        
+                                              
+                                              <button type="submit" class="btn btn-success">Post Product</button>
+                                        </form><br>
+                                    <br>
+                                    <div class="text-center">
+                                        <p>Don't have an account yet? <a href="/auth/signup" >Sign Up Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+	
+	
+
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

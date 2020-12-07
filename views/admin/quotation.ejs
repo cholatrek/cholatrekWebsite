@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cholatrek Admin - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+  <link href="/css/style3.css" rel="stylesheet">
+  <link href="/css/style2.css" rel="stylesheet">
+
+
+  </head>
+  <body id="page-top">
+    <!-- Page Wrapper -->
+  <div id="wrapper" class="shadow"  style="background-color: #343A40">
+
+    <!-- Sidebar -->
+    <!-- <nav class="sidebar"> -->
+        <%- include('./partials/sidebar.ejs') %>
+  
+      
+    <!-- End of Sidebar -->
+
+     <!-- Topbar -->
+     
+     <%- include('./partials/topbar.ejs') %>
+      <!-- this is the end of the topbar -->
+
+
+  <!-- This is the main content -->
+    
+    
+      <div>
+    <h4 class=" text-gray-600" style="padding-top:100px;padding-left:13px;" >Customer Quotation</h4>
+      </div>
+
+     
+
+      <div class="row container py-3" >
+      
+       
+
+      </div>
+
+      <div class="container">
+            <table class="table">
+                    <thead>
+                      <tr class=" table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Service Type </th>
+                        <th scope="col">Message </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                      <% for(var i = 0; i < quotation.length; i++) { %>
+                          <tr>
+                            <th scope="row"><%= i+1 %></th>
+                            <td><%= quotation[i].name %></td>
+                            <td><a href="mailto:<%= quotation[i].email %>"><%= quotation[i].email %></a></td>
+                            <td><%= quotation[i].serviceType %></td>
+                            <td><%= quotation[i].message %></td>
+                          </tr>
+                      
+                      <% } %>
+                           
+
+                    </tbody>
+                  </table>
+
+      
+           
+            
+      </div>
+     
+      
+  
+  <!-- this is the end of the main content -->
+      
+     
+
+      
+      
+
+
+
+   
+
+      
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="js/admin.min.js"></script>
+  </body>
+  </html>

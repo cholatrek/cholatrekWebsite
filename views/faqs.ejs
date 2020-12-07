@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/favicon.png">
+
+    <!-- CSS
+        ============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+
+    <!-- Font Family CSS -->
+    <link rel="stylesheet" href="/assets/css/vendor/cerebrisans.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="/assets/css/vendor/fontawesome-all.min.css">
+
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css">
+
+    <!-- animate-text CSS -->
+    <link rel="stylesheet" href="/assets/css/plugins/animate-text.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/assets/css/plugins/animate.min.css">
+
+    <!-- Light gallery CSS -->
+    <link rel="stylesheet" href="/assets/css/plugins/lightgallery.min.css">
+
+    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+    <!--
+        <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+        -->
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--====================  header area ====================-->
+    <div class="header-area header-area--default">
+
+        <!-- Header Top Wrap Start -->
+       
+        <!-- Header Top Wrap End -->
+
+        <!-- Header Bottom Wrap Start -->
+        <div class="header-bottom-wrap header-sticky">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header default-menu-style position-relative">
+
+                            <!-- brand logo -->
+                            <div class="header__logo">
+                                <a href="/">
+                                    <img src="/assets/images/logo/logo-dark.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <%- include('./partials/header'); %>
+
+                            <!-- header midle box  -->
+                            
+
+                            <!-- header right box -->
+                            <div class="header-right-box">
+                                <div class="header-right-inner" id="hidden-icon-wrapper">
+
+                                    <!-- language-menu -->
+                                    <div class="language-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="">
+                                                    <img class="ls-flag" src="/assets/images/flags/en.png" alt="en" title="English">
+                                                    <span class="wpml-ls-native">English</span>
+                                                </a>
+
+                                                <ul class="ls-sub-menu">
+                                                    <li class="">
+                                                        <a href="#" class="">
+                                                            <img class="ls-flag" src="/assets/images/flags/fr.png" alt="en" title="Français"><span class="wpml-ls-native">Français</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#" class="">
+                                                            <img class="wpml-ls-flag" src="/assets/images/flags/de.png" alt="de" title="Deutsch"><span class="wpml-ls-native">Deutsch</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <!-- header-search-form -->
+                                    <div class="header-search-form default-search">
+                                        <form action="#" class="search-form-top">
+                                            <input class="search-field" type="text" placeholder="Search…">
+                                            <button class="search-submit">
+                                                <i class="search-btn-icon fa fa-search"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- mobile menu -->
+                                <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
+                                    <i></i>
+                                </div>
+                                <!-- hidden icons menu -->
+                                <div class="hidden-icons-menu d-block d-md-none" id="hidden-icon-trigger">
+                                    <a href="javascript:void(0)">
+                                        <i class="far fa-ellipsis-h-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Bottom Wrap End -->
+
+    </div>
+    <!--====================  End of header area  ====================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- breadcrumb-area start -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_box text-center">
+                        <h2 class="breadcrumb-title">FAQs </h2>
+                        <!-- breadcrumb-list start -->
+                        <ul class="breadcrumb-list">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active">FAQs </li>
+                        </ul>
+                        <!-- breadcrumb-list end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb-area end -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="site-wrapper-reveal">
+        <!--====================  Accordion area ====================-->
+        <div class="accordion-wrapper section-space--ptb_100">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_20">
+                            <h6 class="section-sub-title mb-20"></h6>
+                            <h3 class="heading">Frequently asked questions</h3>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="faq-wrapper  section-space--mt_40">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                How can Cholatrek help your business?<span> <i class="fas fa-chevron-down"></i>
+                                            <i class="fas fa-chevron-up"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>Cholatrek's sole aim is to excellently implement the latest technology innovations that will position your business as a 21st century brand  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                What does Cholatrek offer? <span> <i class="fas fa-chevron-down"></i>
+                                            <i class="fas fa-chevron-up"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>Cholatrek provides technical team to work on your brand over a stipulated time giving maximum attention to details
+                                                Our specifications:
+                                                <li> Website and Application development </li>
+                                               
+                                                <li>Brand design and strategy</li>
+                                                <li>Product (UIUX) design</li> 
+                                                <li>Training on Web and Mobile App development</li>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <button class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                How does Cholatrek achieve success?<span> <i class="fas fa-chevron-down"></i>
+                                            <i class="fas fa-chevron-up"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>We are a team of professionals who through adequate research into specified sectors profer a tailored solution  that moves your business to a whole new level. Our process is splitted into four stages
+
+                                                <li>Analysis/ Planning phase</li>
+                                                <li>Design Phase</li>
+                                                <li> Implementation Phase</li>
+                                                <li>Testing and review phase</li>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="faq_3">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#faq_three" aria-expanded="false" aria-controls="faq_three">
+                                                How do you reach Cholatrek? <span> <i class="fas fa-chevron-down"></i>
+                                        <i class="fas fa-chevron-up"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="faq_three" class="collapse" aria-labelledby="faq_3">
+                                        <div class="card-body">
+                                            <p> 
+                                                <ul style="list-style-type: none">
+                                                    You can reach us through our social media platform
+                                                    <li><a href="https://facebook.com/cholatrekng" target="_blank">Facebook- CholatrekNG</a></li>
+                                                    <li><a href="htps://twitter/cholatrekng" target="_blank">Twitter - CholatrekNG</a></li>
+                                                    <li><a href="https://instagram.com/cholatrek" target="_blank">Instagram- Cholatrek</a></li>
+                                                    <li><a href="tel:+2348160504976" target="_blank">Contact / Whatsapp : (+234) 816 0504 976</a></li>
+                                                    <li><a href="mailto:info@cholatrek.org" target="_blank">Email - info@cholatrek.org</a></li> 
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- Start toggles -->
+                        <div class="toggles-wrapper section-space--mt_40">
+                            <div class="faq-wrapper">
+                                <div id="faq-toggles">
+                                    <div class="card">
+                                        <div class="card-header" id="faq_2">
+                                            <h5 class="mb-0">
+                                                <button class="btn-link collapsed" data-toggle="collapse" data-target="#faq_two" aria-expanded="false" aria-controls="faq_two">
+                                                    Cholatrek Training Institute?<span> <i class="fas fa-chevron-down"></i>
+                                            <i class="fas fa-chevron-up"></i> </span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="faq_two" class="collapse" aria-labelledby="faq_2">
+                                            <div class="card-body">
+                                                <p>This is the arm of Cholatrek that's dedicated to training interested individuals in various essential digital skills. They include: Website and App development, Computer programming, Graphics design, UIUX design etc.</p>
+                                                <p>How can I be get trained at  Cholatrek Training Institute?
+                                                    Visit <a  href="https://cholatrek.org/institute">https://cholatrek.org/institute</a> to register for the immediate next cohort</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faq_4">
+                                            <h5 class="mb-0">
+                                                <button class="collapsed" data-toggle="collapse" data-target="#faq_four" aria-expanded="false" aria-controls="faq_four">
+                                                    How can my organization participate in the exclusive technical training?<span> <i class="fas fa-chevron-down"></i>
+                                                <i class="fas fa-chevron-up"></i> </span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="faq_four" class="collapse" aria-labelledby="faq_4" data-parent="#faq-toggles">
+                                            <div class="card-body">
+                                                <p> Kindly email your interest to info@cholatrek.org and our  personnelle would get across to you immediately
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="card">
+                                        <div class="card-header" id="faq_4">
+                                            <h5 class="mb-0">
+                                                <button class="collapsed" data-toggle="collapse" data-target="#faq_four" aria-expanded="false" aria-controls="faq_four">
+                                                    What is Cholatrek's specification? <span> <i class="fas fa-chevron-down"></i>
+                                                <i class="fas fa-chevron-up"></i> </span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="faq_four" class="collapse" aria-labelledby="faq_4" data-parent="#faq-toggles">
+                                            <div class="card-body">
+                                                <p>We have track record of wins in various sectors. Some of the sectors we have worked with include education, Robotics and engineering, hospitality,etc</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    <div class="card">
+                                        <div class="card-header" id="faq_4">
+                                            <h5 class="mb-0">
+                                                <button class="collapsed" data-toggle="collapse" data-target="#faq_four" aria-expanded="false" aria-controls="faq_four">
+                                                    How would Cholatrek achieve their promises? <span> <i class="fas fa-chevron-down"></i>
+                                                <i class="fas fa-chevron-up"></i> </span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="faq_four" class="collapse" aria-labelledby="faq_4" data-parent="#faq-toggles">
+                                            <div class="card-body">
+                                                <p>Be rest assured, our highest culture is Excellence</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End toggles -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  Accordion area  ====================-->
+
+
+
+
+
+
+
+
+
+
+        <!--====================  scroll top ====================-->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!--====================  End of scroll top  ====================-->
+
+        <!--====================  mobile menu overlay ====================-->
+        <%- include('./partials/header_mobile'); %>
+        <!--====================  End of mobile menu overlay  ====================-->
+
+
+
+
+
+
+
+        <!--====================  search overlay ====================-->
+        <div class="search-overlay" id="search-overlay">
+
+            <div class="search-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 ml-auto col-4">
+                            <!-- search content -->
+                            <div class="search-content text-right">
+                                <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-overlay__inner">
+                <div class="search-overlay__body">
+                    <div class="search-overlay__form">
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of search overlay  ====================-->
+
+        <!-- JS
+    ============================================ -->
+        <!-- Modernizer JS -->
+        <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- jQuery JS -->
+        <script src="/assets/js/vendor/jquery-3.3.1.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+        <!-- Swiper Slider JS -->
+        <script src="/assets/js/plugins/swiper.min.js"></script>
+
+        <!-- Light gallery JS -->
+        <script src="/assets/js/plugins/lightgallery.min.js"></script>
+
+        <!-- Waypoints JS -->
+        <script src="/assets/js/plugins/waypoints.min.js"></script>
+
+        <!-- Counter down JS -->
+        <script src="/assets/js/plugins/countdown.min.js"></script>
+
+        <!-- Isotope JS -->
+        <script src="/assets/js/plugins/isotope.min.js"></script>
+
+        <!-- Masonry JS -->
+        <script src="/assets/js/plugins/masonry.min.js"></script>
+
+        <!-- ImagesLoaded JS -->
+        <script src="/assets/js/plugins/images-loaded.min.js"></script>
+
+        <!-- Wavify JS -->
+        <script src="/assets/js/plugins/wavify.js"></script>
+
+        <!-- jQuery Wavify JS -->
+        <script src="/assets/js/plugins/jquery.wavify.js"></script>
+
+        <!-- circle progress JS -->
+        <script src="/assets/js/plugins/circle-progress.min.js"></script>
+
+        <!-- counterup JS -->
+        <script src="/assets/js/plugins/counterup.min.js"></script>
+
+        <!-- wow JS -->
+        <script src="/assets/js/plugins/wow.min.js"></script>
+
+        <!-- animation text JS -->
+        <script src="/assets/js/plugins/animation-text.min.js"></script>
+
+        <!-- Vivus JS -->
+        <script src="/assets/js/plugins/vivus.min.js"></script>
+
+        <!-- Some plugins JS -->
+        <script src="/assets/js/plugins/some-plugins.js"></script>
+
+
+        <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+
+        <!--
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    -->
+
+        <!-- Main JS -->
+        <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

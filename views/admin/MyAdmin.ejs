@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cholatrek Admin - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+  <link href="/css/style3.css" rel="stylesheet">
+  <link href="/css/style2.css" rel="stylesheet">
+
+
+  </head>
+  <body id="page-top">
+    <!-- Page Wrapper -->
+  <div id="wrapper" class="shadow"  style="background-color: #343A40">
+
+    <!-- Sidebar -->
+    <!-- <nav class="sidebar"> -->
+        <%- include('./partials/sidebar.ejs') %>
+  
+      
+    <!-- End of Sidebar -->
+
+     <!-- Topbar -->
+     
+     <%- include('./partials/topbar.ejs') %>
+      <!-- this is the end of the topbar -->
+
+
+  <!-- This is the main content -->
+    
+    
+      <div>
+
+          <h4 class=" text-gray-600" style="padding-top:100px;padding-left:13px;" >Dashboard</h4>
+      </div>
+
+      <div class="row mt-5 container">
+        
+        <div class="col-xl-3 col-md-3 mb-3  " data-toggle="modal" data-target="#exampleModalLong" >
+          <div class="card shadow-sm h-100 py-2">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Upoad a Blog Post</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800" >5000</div>
+                </div>
+                <div class="col-auto">
+                  <i class="fas fa-user fa-3x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+       
+          
+
+        <div class="col-xl-3 col-md-3 mb-3 " data-toggle="modal" data-target="#exampleModalLong2">
+          <div class="card  shadow-sm h-100 py-2">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Upload a testimonial</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">50% </div>
+                </div>
+                <div class="col-auto">
+                  <i class="fas fa-tasks fa-3x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+        <div class="col-xl-3 col-md-3 mb-3" >
+          <div class="card  shadow-sm h-100 py-2">
+            <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                  <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Amount Spent</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">$50,000</div>
+                </div>
+                <div class="col-auto">
+                  <i class="fas fa-dollar-sign fa-3x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xl-3 col-md-3 mb-3  " data-toggle="modal" data-target="#exampleModalLong3">
+            <div class="card shadow-sm h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">upload a Portfolio</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">5000</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-user fa-3x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+
+      </div>
+
+      <div class="row  py-4" style="width: 97%; margin-left: 2px" >
+        <div class="col-sm-8 ">
+          <div class="card" >
+              <div class="row card-body">
+                <div class="col-sm-6">
+                    <h5 class="card-title ">Visitor Map</h5>
+                    <p class="card-text text-gray-400">Where do our visitors come from</p>
+
+                    <ul class="list-group list-group-flush pt-5">
+                      <li class="list-group-item"> <span class="badge badge-danger badge-pill">3</span> Cologne, Germany </li>
+                      <li class="list-group-item"> <span class="badge badge-danger badge-pill">2</span> Lagos, Nigeria</li>
+                      <li class="list-group-item"> <span class="badge badge-danger badge-pill">1</span> Lisbon,Portugal</li>
+                    </ul>
+                    
+                  </div>
+                  <iframe  class="col-sm-6 mt-5 " width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=college%20of%20medicine%20&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+          </div>
+          </div>
+        <div class="col-sm-4 ">
+          <div class="card text-white bg-danger mb-3 pb-4" style="width:100%;">
+            <div class="card-body">
+              <h2 class="card-title mt-2" style="font-weight: bolder;">123</h2>
+              <p class="card-text">Comments </p>
+                
+            </div>
+          </div>
+          <div class="card text-white bg-dark mb-3 pb-4" style="width:100%;">
+            <div class="card-body">
+              <h2 class="card-title mt-2" style="font-weight: bolder;">214</h2>
+              <p class="card-text">New Followers</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row container">
+        
+        <div class="col-xl-8">
+          <div class="card mb-3">
+            <div class="card-header text-center text-uppercase font-weight-bold"   >Projects</div>
+            <div class="card-body">
+              <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
+              <div class="progress mb-4">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h4 class="small font-weight-bold">Customer Database <span class="float-right">50%</span></h4>
+              <div class="progress mb-4">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h4 class="small font-weight-bold">Page Maintenance <span class="float-right">60%</span></h4>
+              <div class="progress mb-4">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h4 class="small font-weight-bold">Forms Submission <span class="float-right">80%</span></h4>
+              <div class="progress mb-4">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h4 class="small font-weight-bold">Project Upload <span class="float-right">100%</span></h4>
+              <div class="progress mb-4">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4">
+          <div class="card text-white mb-3" >
+            <div class="card-header text-primary">Chart Progress</div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+
+            </div>
+          </div>
+
+        </div>
+
+      
+      
+    
+    
+    
+      </div>
+      
+
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Blog Post Upload</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <form action="/blog/blogPost" method="post" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Blog Title</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="title" aria-describedby="emailHelp" placeholder="Blog Title">
+                        
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Blog Author</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" name="author" aria-describedby="emailHelp" placeholder="Blog Author">
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Blog Category </label>
+                            <select class="form-control form-control-sm" name="category"  >
+                                <option></option>
+                                <option value="leadership">Leadership</option>
+                                <option value="design">Design</option>
+                                <option value="motivation">motivation</option>
+                                <option value="tech">Tech Updates</option>
+                               
+                                
+                              </select>
+
+                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"> Date</label>
+                            <input type="date" class="form-control" id="exampleInputEmail1" name="date" aria-describedby="emailHelp" placeholder="Date Uploaded">
+                            
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Blog Content</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" name="content" rows="3"></textarea>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Blog Image</label>
+                                <input type="file" class="form-control-file" name="blogImage" id="exampleFormControlFile1">
+                              </div>
+                   
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="submit" class="btn btn-primary">Publish</button>
+                                </div>
+                      
+                    </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Testimonial Upload</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/test/testimonial" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Name</label>
+                          <input type="name" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" placeholder="Name of testimonial">
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Role / Position</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="role" aria-describedby="emailHelp" placeholder="Position of Testimonial">
+                            
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputEmail1"> Date</label>
+                              <input type="date" class="form-control" id="exampleInputEmail1" name="date" aria-describedby="emailHelp" placeholder="Date Uploaded">
+                              
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1"> Content</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="content" rows="3"></textarea>
+                              </div>
+                          
+                              <div class="form-group">
+                                  <label for="exampleFormControlFile1">Image of Testimonial</label>
+                                  <input type="file" class="form-control-file" name="testimonialImage" id="exampleFormControlFile1">
+                                </div>
+                     
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Publish</button>
+                                  </div>
+                        
+                      </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Portfolio Upload</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="/port/portfolio" method="post" enctype="multipart/form-data">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Title</label>
+                            <input type="name" class="form-control" id="exampleInputEmail1" name="title" aria-describedby="emailHelp" placeholder="Title of Job">
+                            
+                          </div>
+                       
+
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Category of Job</label>
+                              <select class="form-control form-control" name="category"  >
+                                  <option></option>
+                                  <option value="app">App Development</option>
+                                  <option value="web">Web Development</option>
+                                  <option value="ui">UI/UX</option>
+                                  <option value="branding">Branding</option>
+                                  <option value="training">Staff Training </option>
+                                  <option value="school">School Management System</option>
+                                  
+                                </select>
+  
+                           </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"> Date</label>
+                                <input type="date" class="form-control" id="exampleInputEmail1" name="date" aria-describedby="emailHelp" placeholder="Date Uploaded">
+                                
+                              </div>
+
+                              <div class="form-group">
+                                  <label for="exampleInputEmail1">Overview</label>
+                                  <input type="text" class="form-control" id="exampleInputEmail1" name="overview" aria-describedby="emailHelp" placeholder="Overview of Project">
+                                  
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Author</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" name="author" aria-describedby="emailHelp" placeholder="Author">
+                                    
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="exampleInputEmail1">Position</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" name="position" aria-describedby="emailHelp" placeholder="Position at Cholatrek">
+                                      
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Analysis</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="analysis" aria-describedby="emailHelp" placeholder="Enter Analysis Phase">
+                                        
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Design</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" name="design" aria-describedby="emailHelp" placeholder="Enter Design Phase">
+                                          
+                                        </div>
+  
+
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Implementation</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" name="implementation" aria-describedby="emailHelp" placeholder="implementation phase ">
+                                          
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Testing</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" name="testing" aria-describedby="emailHelp" placeholder="Testing">
+                                          
+                                      </div>
+                              <div class="form-group">
+                                  <label for="exampleFormControlTextarea1"> Excerpt</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" name="excerpt" rows="3"></textarea>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Image </label>
+                                    <input type="file" class="form-control-file" name="portfolioImage" id="exampleFormControlFile1">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label for="exampleFormControlFile1">Video </label>
+                                      <input type="file" class="form-control-file" name="portfolioVideo" id="exampleFormControlFile1">
+                                    </div>
+                       
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="submit" class="btn btn-primary">Publish</button>
+                                    </div>
+                          
+                        </form>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+    
+  
+  <!-- this is the end of the main content -->
+      
+     
+
+      
+      
+
+
+
+   
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>  
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="js/admin.min.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+        ============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+    <!-- Font Family CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/cerebrisans.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-all.min.css">
+
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+
+    <!-- animate-text CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate-text.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+
+    <!-- Light gallery CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
+    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+    <!--
+        <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+        -->
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--====================  header area ====================-->
+    <div class="header-area header-area--default">
+
+       
+
+        <!-- Header Bottom Wrap Start -->
+        <div class="header-bottom-wrap header-sticky">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header default-menu-style position-relative">
+    
+                                <!-- brand logo -->
+                                <div class="header__logo">
+                                    <a href="/">
+                                        <img src="/assets/images/logo/logo-dark.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+    
+                                <%- include('./partials/header'); %>
+    
+                                <!-- header midle box  -->
+                               
+    
+                                <!-- header right box -->
+                                <div class="header-right-box">
+                                    <div class="header-right-inner" id="hidden-icon-wrapper">
+    
+                                        <!-- language-menu -->
+                                        <div class="language-menu">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="">
+                                                        <img class="ls-flag" src="/assets/images/flags/en.png" alt="en" title="English">
+                                                        <span class="wpml-ls-native">English</span>
+                                                    </a>
+    
+                                                    <ul class="ls-sub-menu">
+                                                        <li class="">
+                                                            <a href="#" class="">
+                                                                <img class="ls-flag" src="/assets/images/flags/fr.png" alt="en" title="Français"><span class="wpml-ls-native">Français</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="#" class="">
+                                                                <img class="wpml-ls-flag" src="/assets/images/flags/de.png" alt="de" title="Deutsch"><span class="wpml-ls-native">Deutsch</span>
+                                                            </a>
+                                                        </li>
+    
+                                                    </ul>
+    
+                                                </li>
+    
+                                            </ul>
+                                        </div>
+    
+                                        <!-- header-search-form -->
+                                        <div class="header-search-form default-search">
+                                            <form action="#" class="search-form-top">
+                                                <input class="search-field" type="text" placeholder="Search…">
+                                                <button class="search-submit">
+                                                    <i class="search-btn-icon fa fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- mobile menu -->
+                                    <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
+                                        <i></i>
+                                    </div>
+                                    <!-- hidden icons menu -->
+                                    <div class="hidden-icons-menu d-block d-md-none" id="hidden-icon-trigger">
+                                        <a href="javascript:void(0)">
+                                            <i class="far fa-ellipsis-h-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Header Bottom Wrap End -->
+
+    </div>
+    <!--====================  End of header area  ====================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="site-wrapper-reveal"  >
+       <!--============ Service Hero Start ============-->
+       <div class="appointment-hero-wrapper appointment-hero-bg section-space--ptb_120" >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="appointment-hero-wrap wow move-up">
+                        <div class="appointment-hero-text">
+                            <h6 class="text-white">Secure & IT Services </h6>
+                            <h1 class="font-weight--reguler text-white mb-30">Excellent IT services for <span class="text-line">your success</span></h1>
+                            <div class="hero-button">
+                                <div class="video-popup infotech-video-box">
+                                    <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="single-popup-wrap video-link">
+                                        <div class="video-content">
+                                            <div class="ht-popup-video video-button">
+                                                <div class="video-mark">
+                                                    <div class="wave-pulse wave-pulse-1"></div>
+                                                    <div class="wave-pulse wave-pulse-2"></div>
+                                                </div>
+                                                <div class="video-button__two">
+                                                    <div class="video-play">
+                                                        <span class="video-play-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video-text">
+                                                How we work
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mr-auto ml-auto col-md-6">
+                    <div class="business-solution-form-wrap mr-auto ml-auto">
+                        <div class="contact-title text-center section-space--mb_40">
+                            <h5 class="mb-10">Book appointment</h5>
+                            <% if (message.length > 0) { %>
+                                <br>
+                                <p class="text-center  btn btn-success " style="width: 100%;background-color: #184289"><%= message %></p>
+                            <% } else{ %>
+                                <p class="text-center" style="color:grey">It's our pleasure to have a chance to cooperate.</p>
+                            <% } %>
+                        </div>
+                        <form action="/appointment" method="post">
+                            <div class="contact-form__two">
+                                <div class="contact-inner">
+                                    <input name="name" type="text" placeholder="Name *" required>
+                                </div>
+                                <div class="contact-inner">
+                                    <input name="email" type="email" placeholder="Email *" required >
+                                </div>
+                                <div class="contact-select">
+                                    <div class="form-item contact-inner"  >
+                                        <span class="inquiry">
+                                    <select name="appointmentType" class="select-item" required >
+                                        <option ></option>
+                                        <option value="web">Web development</option>
+                                        <option value="app">App development</option>
+                                        <option value="ui">UI/UX</option>
+                                        <option value="school" >School Application</option>
+                                        <option value="branding">Branding Design and Strategy</option>
+                                        <option value="training">Staff Training</option>
+                                       
+                                    </select>
+                                </span>
+                                    </div>
+                                </div>
+                                <div class="comment-submit-btn text-center">
+                                    <button class="ht-btn ht-btn-md" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============ Service Hero End ============-->
+        <!--===========  feature-large-images-wrapper  Start =============-->
+        <div class="feature-large-images-wrapper section-space--ptb_100">
+            <div class="container">
+                <div class="cybersecurity-about-box">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="conact-us-wrap-one managed-it">
+                                <h5 class="heading ">Cholatrek specializes in <span class="text-color-primary"> technological and IT-related </span>services such as Web and App development, School Management System, Branding and Strategy, UI/UX and lots more... </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 offset-lg-1">
+                            <div class="cybersecurity-about-text">
+                                <div class="text">The IT services that Cholatrek  runs can be segmented by the type of skills employed to deliver the service (design, build, run). Technically, these fall into three main categories: business process services, application services, and infrastructure services. Cholatrek also runs educational services from her institute where individuals are trained on Web development, App development and other tech related skills. <a href="/institute" style="color:blue" >Click here</a> to see details</div>
+                                <div class="button-group-wrap">
+                                    <a href="#" class="ht-btn ht-btn-md mr-md-3 mb-20" data-toggle="modal" data-target="#exampleModalLong">Get a service Quote</a>
+                                    <a href="https://wa.me/message/U2CFOUAEBZ54G1" class="ht-btn ht-btn-md ht-btn--solid">Chat with a consultant</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                  
+        
+            <div class="" style="padding:12px">
+                <div class="text-center" >
+                    <h5 class="mb-10">Get a service Quotation</h5>
+                    <!-- <p class="text">It's out pleasure to have a chance to cooperate.</p><hr> -->
+                </div><br>
+                <form action="/Quotation" method="post">
+                    <div class="contact-form__two">
+                        <div class="contact-inner">
+                            <input name="name" type="text" placeholder="Name *" required>
+                        </div>
+                        <div class="contact-inner">
+                            <input name="email" type="email" placeholder="Email *" required>
+                        </div>
+                        <div class="contact-select">
+                            <div class="form-item contact-inner">
+                                <span class="inquiry">
+                                    <select name="serviceType" class="select-item"  required >
+                                        <option ></option>
+                                        <option value="web">Web development</option>
+                                        <option value="app">App development</option>
+                                        <option value="ui">UI/UX</option>
+                                        <option value="school" >School Application</option>
+                                        <option value="branding">Branding Design and Strategy</option>
+                                        <option value="training">Staff Training</option>
+                                       
+                                    </select>
+                        </span>
+                            </div>
+                        </div>
+                        <div class="contact-inner contact-message">
+                            <textarea name="message" placeholder="How can we help you?" ></textarea>
+                        </div>
+                       
+                        <div class="comment-submit-btn text-center float-right">
+                            <button class="ht-btn ht-btn-md" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+
+        <!--===========  feature-large-images-wrapper  End =============-->
+
+        <!--===========  feature-images-wrapper  Start =============-->
+        <div class="feature-images-wrapper bg-gray section-space--ptb_100">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">Reliable IT Services for your <span class="text-color-primary"> Business</span></h3>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="feature-images__four">
+                            <div class=" row">
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="assets/images/icons/mitech-box-image-style-05-image-01-60x60.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">Web development</h5>
+                                                <div class="text">We develop all kind of websites and web applications that is responsive on all devices such as Ipads,tablets Mobile phones as well as your computers. </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="assets/images/icons/mitech-box-image-style-05-image-02-60x60.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">App development </h5>
+                                                <div class="text">We develop applications ranging from social media apps, e-commerce apps or specific purpose applications running on Android, Windows and Apple operating systems.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="assets/images/icons/mitech-box-image-style-05-image-03-60x60.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">School  Application </h5>
+                                                <div class="text">We develop School Management Softwares including several features with exam portals inclusion as well as Staff-Student Management and Time table scheduler. </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="assets/images/icons/mitech-box-image-style-05-image-04-60x60.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">Brand Design and Strategy  </h5>
+                                                <div class="text">Cholatrek has a solid base of designers that gives your business a good face out there. We help you promote your business through the creation of quality graphical content </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="assets/images/icons/mitech-box-image-style-05-image-05-60x60.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">UI/UX</h5>
+                                                <div class="text">We build good user interface accompanied with great and wonderful user experience for new product to be developed for your business. </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="assets/images/icons/mitech-box-image-style-05-image-06-60x60.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">Staff Training</h5>
+                                                <div class="text">We help businesses build their producitivity level as we engage introduce them to tools that enhances their producitivity at their job routines. </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-under-heading text-center section-space--mt_60">Challenges are just opportunities in disguise. <a href="https://wa.me/message/U2CFOUAEBZ54G1">Take the challenge!</a></div>
+
+                    </div>
+                </div>
+                
+     
+            </div>
+        </div>
+        <!--===========  feature-images-wrapper  End =============-->
+        <div class="gradation-process-area section-space--ptb_100" >
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gradation-title-wrapper section-space--mb_60">
+                            <div class="gradation-title-wrap ">
+                                <h6 class="section-sub-title text-black mb-20">HOW WE WORK</h6>
+                                <h4 class="heading">How it helps <span class="text-color-primary">your <br> business succeed</span></h4>
+                            </div>
+
+
+                            <div class="gradation-sub-heading">
+                                <h3 class="heading"><mark>04</mark> PROCESS</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ht-gradation style-01">
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">1</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">01. Analysis/Planning  </h6>
+
+                                    <div class="text">We meet customers in set place to discuss the details about needs and demands before proposing a plan.</div>
+
+                                    
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.15s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">2</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">02. Design/Prototypic  Phase</h6>
+
+                                    <div class="text">Our Product designers come up with mock-up and design prototypes that suits what your business uniqeuly needs.</div>
+
+                                   
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.20s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">3</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">03. Implementation  Phase</h6>
+
+                                    <div class="text">After developing a prototype, Our developers and team of technicians transforms prototypes into desired product for your business.</div>
+
+                                   
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate wow fadeInRight" data-wow-delay="0.25s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">4</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">04. Testing &amp; Review Phase</h6>
+
+                                    <div class="text">Once the Implementation has been done, we need to go through the two stages of testing (both the white box and black box testing).</div>
+
+                                   
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-resources-wrapper">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="resources-left-box">
+                            <div class="resources-inner">
+                                <h6 class="sub-title mb-20">Resources</h6>
+                                <h3 class="heading">Get a copy of brochure on <span class="text-color-primary"> Cholatrek services.</span></h3>
+                                <div class="button mt-30">
+                                    <a href="#" class="ht-btn ht-btn-md">Download now (3MB)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="resources-right-box">
+                            <div class="resources-right-inner text-center">
+                                <div class="resources-images">
+                                    <img class="img-fluid" src="assets/images/banners/managed-it-services-book-cover.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========= About Resources Wrapper End ===========-->
+        <!--====================  testimonial section ====================-->
+        <div class="testimonial-slider-area section-space--pt_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-wrap text-center section-space--mb_40">
+                            <h6 class="section-sub-title mb-20">Testimonials</h6>
+                            <h3 class="heading">What do people praise about <span class="text-color-primary"> Cholatrek?</span></h3>
+                        </div>
+                        <div class="testimonial-slider">
+                            <div class="swiper-container testimonial-slider__container">
+                                <div class="swiper-wrapper testimonial-slider__wrapper">
+                                        <% for(var i = 0; i < testimonial.length; i++){ %>
+                                            <div class="swiper-slide">
+                                                    <div class="testimonial-slider__one wow move-up">
+            
+                                                        <div class="testimonial-slider--info">
+                                                            <div class="testimonial-slider__media">
+                                                                <img src="<%= testimonial[i].testimonialImagev %>" class="img-fluid" alt="">
+                                                            </div>
+            
+                                                            <div class="testimonial-slider__author">
+                                                                <div class="testimonial-rating">
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </div>
+                                                                <div class="author-info">
+                                                                    <h6 class="name"><%= testimonial[i].name %></h6>
+                                                                    <span class="designation"><%= testimonial[i].role %></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+            
+                                                        <div class="testimonial-slider__text"><%= testimonial[i].content %></div>
+            
+                                                    </div>
+                                                </div>
+                                        <% } %>
+                                    
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-t01 section-space--mt_30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <!--====================  End of testimonial section  ====================-->
+
+        
+        <!--============ Contact Us Area Start =================-->
+        <div class="contact-us-section-wrappaer infotechno-contact-us-bg section-space--ptb_120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-lg-6">
+                        <div class="conact-us-wrap-one">
+                            <h3 class="heading">Obtaining further information by <span class="text-color-primary">make a contact</span> with our experienced IT staffs. </h3>
+
+                            <div class="sub-heading">We’re available for 8 hours a day!<br>Contact to require a detailed analysis and assessment of your plan.</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-lg-6">
+                            <div class="contact-info-one text-center">
+                                <div class="icon">
+                                    <span class="fal fa-phone"></span>
+                                </div>
+                                <h6 class="heading font-weight--reguler">Reach out now!</h6>
+                                <h2 class="call-us"><a href="tel:08160504976">08160504976</a></h2>
+                                <div class="contact-us-button mt-20">
+                                    <a href="tel:08160504976" class="btn btn--secondary">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--============ Contact Us Area End =================-->
+    </div>
+
+
+
+
+
+    <!--====================  footer area ====================-->
+    <%- include('./partials/footer'); %>
+    <!--====================  End of footer area  ====================-->
+
+
+
+
+
+
+
+    <!--====================  scroll top ====================-->
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="arrow-top fal fa-long-arrow-up"></i>
+        <i class="arrow-bottom fal fa-long-arrow-up"></i>
+    </a>
+    <!--====================  End of scroll top  ====================-->
+
+    <!--====================  mobile menu overlay ====================-->
+    <%- include('./partials/header_mobile'); %>
+    <!--====================  End of mobile menu overlay  ====================-->
+
+
+
+
+
+
+
+    <!--====================  search overlay ====================-->
+    <div class="search-overlay" id="search-overlay">
+
+        <div class="search-overlay__header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6 ml-auto col-4">
+                        <!-- search content -->
+                        <div class="search-content text-right">
+                            <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay__inner">
+            <div class="search-overlay__body">
+                <div class="search-overlay__form">
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of search overlay  ====================-->
+
+    <!-- JS
+    ============================================ -->
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/plugins/swiper.min.js"></script>
+
+    <!-- Light gallery JS -->
+    <script src="assets/js/plugins/lightgallery.min.js"></script>
+
+    <!-- Waypoints JS -->
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+
+    <!-- Counter down JS -->
+    <script src="assets/js/plugins/countdown.min.js"></script>
+
+    <!-- Isotope JS -->
+    <script src="assets/js/plugins/isotope.min.js"></script>
+
+    <!-- Masonry JS -->
+    <script src="assets/js/plugins/masonry.min.js"></script>
+
+    <!-- ImagesLoaded JS -->
+    <script src="assets/js/plugins/images-loaded.min.js"></script>
+
+    <!-- Wavify JS -->
+    <script src="assets/js/plugins/wavify.js"></script>
+
+    <!-- jQuery Wavify JS -->
+    <script src="assets/js/plugins/jquery.wavify.js"></script>
+
+    <!-- circle progress JS -->
+    <script src="assets/js/plugins/circle-progress.min.js"></script>
+
+    <!-- counterup JS -->
+    <script src="assets/js/plugins/counterup.min.js"></script>
+
+    <!-- wow JS -->
+    <script src="assets/js/plugins/wow.min.js"></script>
+
+    <!-- animation text JS -->
+    <script src="assets/js/plugins/animation-text.min.js"></script>
+
+    <!-- Vivus JS -->
+    <script src="assets/js/plugins/vivus.min.js"></script>
+
+    <!-- Some plugins JS -->
+    <script src="assets/js/plugins/some-plugins.js"></script>
+
+
+    <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+
+    <!--
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    -->
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

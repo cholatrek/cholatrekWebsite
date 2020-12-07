@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cholatrek Admin - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+  <link href="/css/style3.css" rel="stylesheet">
+  <link href="/css/style2.css" rel="stylesheet">
+
+
+  </head>
+  <body id="page-top">
+    <!-- Page Wrapper -->
+  <div id="wrapper" class="shadow"  style="background-color: #343A40">
+
+    <!-- Sidebar -->
+    <!-- <nav class="sidebar"> -->
+        <%- include('./partials/sidebar.ejs') %>
+  
+      
+    <!-- End of Sidebar -->
+
+     <!-- Topbar -->
+     
+     <%- include('./partials/topbar.ejs') %>
+      <!-- this is the end of the topbar -->
+
+
+  <!-- This is the main content -->
+    
+    
+      <div>
+        <h4 class=" text-gray-600" style="padding-top:100px;padding-left:13px;" >Blog Pages</h4>
+      </div>
+
+     
+
+      <div class="row container py-3" >
+      
+       
+
+      </div>
+
+      <div class="container">
+         
+
+          <div class="row">
+
+            <% for(var i = 0; i < blogs.length; i++){ %>
+
+
+              <div class="col-sm-3"  style="margin-bottom:20px;" >
+                  <div class="shadow">
+                          <div class="card " style="">
+                          <img class="card-img-top" src=" <%= blogs[i].imgUrl.slice(8) %>" alt="Card image cap">
+                          <div class="card-body">
+                              <p><%= blogs[i].title %></p>
+                            <p class="card-text">
+                                <div class="">
+                                    <button  data-toggle="modal" data-target="#popup<%= i %>"  class="float-left btn btn-success" >Edit Post </button>
+                                    <button data-toggle="modal" data-target="#popup<%= i+ blogs.length %>" class="float-right btn btn-danger" >Delete ! </button>
+                                </div>
+                            </p>
+                          </div>
+                  </div>
+                  </div>
+            </div>
+
+            <div class="modal fade" id="popup<%= i %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Blog Post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                     <form  action="/blog/blogEdit/<%= blogs[i]._id %>"  method="post">
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Blog Title</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" name="title" aria-describedby="emailHelp" value="<%= blogs[i].title %>">
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Blog Author</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="author" aria-describedby="emailHelp" value="<%= blogs[i].author %>">
+                            
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputEmail1">Blog Category </label>
+                              <select class="form-control form-control-sm"  name="category"  >
+                                  <option value="<%= blogs[i].category %>"><%= blogs[i].category %></option>
+                                  <option value="leadership">Leadership</option>
+                                  <option value="design">Design</option>
+                                  <option value="motivation">motivation</option>
+                                  <option value="tech">Tech Updates</option>
+                                 
+                                  
+                                </select>
+  
+                           </div>
+                          <div class="form-group">
+                              <label for="exampleInputEmail1"> Date</label>
+                              <input type="date" class="form-control" id="exampleInputEmail1" name="date"   aria-describedby="emailHelp" value="<%= blogs[i].date %>">
+                              
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Blog Content</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="content" value="<%= blogs[i].content %>" rows="3"></textarea>
+                              </div>
+                          
+                            
+                        
+  
+                         <button type="submit" class="btn btn-primary">Update</button>
+                       </form>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+  
+              <div class="modal fade" id="popup<%= i+ blogs.length %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content" style="padding:5%">
+                   <h4 style="font-weight:bold; text-align:center">Do you want to Delete this post ?</h4>
+                  <center> 
+                       <form action="/blog/blogDelete/<%= blogs[i].id %>" method="post">
+                             <input type="hidden"><br<br><br>
+                             <button class="btn btn-danger"  style="padding:10px 30px;" type="submit">Yes</button>  
+                       </form>
+                 </center> 
+                 </div>
+               </div>
+             </div>
+
+            <% } %>
+              
+               
+               
+
+                 
+
+              
+             
+              
+          </div>
+         
+
+
+      
+            
+      </div>
+     
+      
+  
+  <!-- this is the end of the main content -->
+      
+     
+
+      
+      
+
+
+
+   
+
+      
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="/js/admin.min.js"></script>
+  </body>
+  </html>

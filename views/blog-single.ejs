@@ -76,7 +76,7 @@
                                 <!-- brand logo -->
                                 <div class="header__logo">
                                     <a href="/">
-                                        <img src="/assets/images/logo/logo-dark.png" class="img-fluid" alt="">
+                                        <img src="/assets/images/logo/logo-dark.png" style="width: 60%;" class="img-fluid" alt="">
                                     </a>
                                 </div>
     
@@ -259,7 +259,7 @@
                                         <% } %>
                                         
                                         <% if(blogList.length >3) { %>
-                                            <% for(var i = 0 ; i < 5; i++) { %>
+                                            <% for(var i = 0 ; i < 3; i++) { %>
                                                 <li>
                                                     <a href="/blog/<%= blogList[i]._id %>"><%= blogList[i].title %></a>
                                                 </li>
@@ -277,7 +277,7 @@
                             <!-- === Sidebar Widget Start === -->
                             <div class="sidebar-widget widget-images wow move-up">
 
-                                <img class="img-fluid" src="/assets/images/blog/blog-sidebar-ads.jpg" alt="">
+                                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/cholatrek-9acb7.appspot.com/o/IMG_1185.PNG?alt=media&token=a0b63982-5efb-4149-baf9-fafbd7a33b89" alt="">
 
                             </div>
                             <!-- === Sidebar Widget End === -->
@@ -315,7 +315,7 @@
                                     <div class="post-meta mt-20">
                                         <div class="post-author">
                                             <a href="#">
-                                                <img class="img-fluid avatar-96" src="/assets/images/blog/author.jpg" alt=""> <%= blog.author %>
+                                                <img class="img-fluid avatar-96" src="https://firebasestorage.googleapis.com/v0/b/cholatrek-9acb7.appspot.com/o/perfection-removebg-preview.png?alt=media&token=8810c736-76b9-4b83-9bdb-9eaa219bc6d0" alt=""> <%= blog.author %>
                                             </a>
                                         </div>
                                         <div class="post-date">
@@ -327,7 +327,7 @@
                                     </div>
 
                                     <div class="post-excerpt mt-15">
-                                        <p><%= blog.content %></p>
+                                        <p><%- blog.content %></p>
 
                                         <div class="entry-post-share-wrap  border-bottom">
                                             <div class="row align-items-center">

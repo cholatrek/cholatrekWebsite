@@ -119,5 +119,12 @@ router.get('/contact', (req,res)=>{
 })
 
 
+router.get('/privacy', (req,res)=>{
+    res.render('privacy', {
+        title: 'Cholatrek|Privacy'
+    })
+})
+
+
 
 module.exports = router;
